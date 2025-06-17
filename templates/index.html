@@ -18,7 +18,7 @@
 
  <link 
 
-href="hƩps://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swa
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swa
 
 p" rel="stylesheet"> 
 
@@ -37,35 +37,35 @@ p" rel="stylesheet">
 
  <nav class="flex flex-wrap gap-3"> 
 
- <buƩon id="navAddItem" class="nav-buƩon bg-blue-400 text-white py-2 px-5 
+ <button id="navAddItem" class="nav-buƩon bg-blue-400 text-white py-2 px-5 
 
 rounded-md hover:bg-blue-500 transiƟon duraƟon-150 ease-in-out transform hover:scale-
 
-105 acƟve">
+105 active">
 
  Add Item 
 
- </buƩon>
+ </button>
 
- <buƩon id="navInventoryView" class="nav-buƩon bg-blue-400 text-white py-2 px-5 
+ <button id="navInventoryView" class="nav-button bg-blue-400 text-white py-2 px-5 
 
-rounded-md hover:bg-blue-500 transiƟon duraƟon-150 ease-in-out transform hover:scale-
+rounded-md hover:bg-blue-500 transition duration-150 ease-in-out transform hover:scale-
 
 105"> 
 
- Inventory & ValuaƟon
+ Inventory & Valuation
 
- </buƩon>
+ </button>
 
- <buƩon id="navStockModificaƟon" class="nav-buƩon bg-blue-400 text-white py-2 
+ <button id="navStockModificaƟon" class="nav-button bg-blue-400 text-white py-2 
 
-px-5 rounded-md hover:bg-blue-500 transiƟon duraƟon-150 ease-in-out transform 
+px-5 rounded-md hover:bg-blue-500 transiton duration-150 ease-in-out transform 
 
 hover:scale-105"> 
 
  Stock ModificaƟon
 
- </buƩon>
+ </button>
 
  </nav> 
 
@@ -83,7 +83,7 @@ role="alert"></div>
 
  <!-- Add Item Screen --> 
 
- <secƟon id="addItemScreen" class="screen acƟve bg-white p-6 rounded-xl shadow-lg 
+ <section id="addItemScreen" class="screen active bg-white p-6 rounded-xl shadow-lg 
 
 border border-gray-200 flex-col md:flex-row gap-6"> 
  <div class="w-full md:w-1/2 mx-auto"> 
@@ -128,7 +128,7 @@ shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
 
 700">QuanƟty</label>
 
- <input type="number" id="itemQuanƟty" name="itemQuanƟty" required 
+ <input type="number" id="itemQuantity" name="itemQuantity" required 
 
 min="0" 
 
@@ -155,29 +155,29 @@ shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
 
  <div class="flex flex-col space-y-3"> 
 
- <buƩon type="submit" id="saveItemBtn"
+ <button type="submit" id="saveItemBtn"
 
  class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-
 
 700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 shadow-md 
 
-transiƟon duraƟon-150 ease-in-out transform hover:scale-105"> 
+transition duration-150 ease-in-out transform hover:scale-105"> 
 
  Add Item 
 
- </buƩon>
+ </button>
 
- <buƩon type="buƩon" id="clearFormBtn"
+ <button type="button" id="clearFormBtn"
 
  class="w-full bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-
 
 600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 shadow-md 
 
-transiƟon duraƟon-150 ease-in-out transform hover:scale-105"> 
+transition duration-150 ease-in-out transform hover:scale-105"> 
 
  Clear Form 
 
- </buƩon>
+ </button>
 
  </div> 
 
@@ -185,17 +185,17 @@ transiƟon duraƟon-150 ease-in-out transform hover:scale-105">
 
  </div> 
 
- </secƟon>
+ </section>
 
- <!-- Inventory View & ValuaƟon Screen --> 
+ <!-- Inventory View & Valuation Screen --> 
 
- <secƟon id="inventoryViewScreen" class="screen bg-white p-6 rounded-xl shadow-lg 
+ <section id="inventoryViewScreen" class="screen bg-white p-6 rounded-xl shadow-lg 
 
 border border-gray-200 flex-col gap-6"> 
 
  <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Current Inventory 
 
-& ValuaƟon</h2>
+& Valuation</h2>
 
  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6"> 
 
@@ -255,7 +255,7 @@ uppercase tracking-wider">ID</th>
 uppercase tracking-wider">Name</th>
    <th scope="col" class="px-6 py-3 text-leŌ text-xs font-medium text-gray-500 
 
-uppercase tracking-wider">QuanƟty</th>
+uppercase tracking-wider">Quantity</th>
 
  <th scope="col" class="px-6 py-3 text-leŌ text-xs font-medium text-gray-500 
 
@@ -263,7 +263,7 @@ uppercase tracking-wider">Cost Price (₹)</th>
 
  <th scope="col" class="px-6 py-3 text-leŌ text-xs font-medium text-gray-500 
 
-uppercase tracking-wider">AcƟons</th>
+uppercase tracking-wider">Actions</th>
 
  </tr> 
 
@@ -287,7 +287,7 @@ in inventory. Add some!</div>
 
  <!-- Stock ModificaƟon Screen --> 
 
- <secƟon id="stockModificaƟonScreen" class="screen bg-white p-6 rounded-xl shadow-lg 
+ <section id="stockModificaƟonScreen" class="screen bg-white p-6 rounded-xl shadow-lg 
 
 border border-gray-200 flex-col md:flex-row gap-6"> 
 
@@ -310,7 +310,7 @@ Stock</h2>
  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md 
 
 shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"> 
-    <opƟon value="">-- Select an item --</opƟon>
+    <option value="">-- Select an item --</option>
 
  </select> 
 
@@ -320,9 +320,9 @@ shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
 
  <label for="modifyQuanƟty" class="block text-sm font-medium text-gray-
 
-700">QuanƟty to Change</label>
+700">Quantity to Change</label>
 
- <input type="number" id="modifyQuanƟty" required min="1"
+ <input type="number" id="modifyQuantity" required min="1"
 
  class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md 
 
@@ -375,17 +375,17 @@ shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
 
  </div> 
 
- <buƩon type="submit"
+ <button type="submit"
 
  class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-
 
 700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 shadow-md 
 
-transiƟon duraƟon-150 ease-in-out transform hover:scale-105"> 
+transition duration-150 ease-in-out transform hover:scale-105"> 
 
  Apply Change 
 
- </buƩon>
+ </button>
 
  </form> 
 
@@ -395,7 +395,7 @@ transiƟon duraƟon-150 ease-in-out transform hover:scale-105">
 
 Summary</h3> 
 
- <div class="flex jusƟfy-between items-center mb-2"> 
+ <div class="flex justify-between items-center mb-2"> 
 
  <span class="text-gray-700 font-medium">Total Profit:</span> 
 
@@ -415,7 +415,7 @@ Summary</h3>
 
  </div> 
 
- </secƟon>
+ </section>
 
  </main> 
 
@@ -430,7 +430,7 @@ Summary</h3>
 
  <!-- Link to external JavaScript file --> 
 
- <script src="{{ url_for('staƟc', filename='script.js') }}"></script>
+ <script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body> 
 
